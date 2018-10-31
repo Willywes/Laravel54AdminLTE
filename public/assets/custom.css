@@ -3,8 +3,23 @@ body, html {
     /*font-family: 'Open Sans', sans-serif !important;*/
 }
 
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 /*
-* Switch es para activar y desactivar items 
+* Switch es para activar y desactivar items
 */
 .switch {
     position: relative;
@@ -70,23 +85,24 @@ input:checked + .slider:before {
     transform: translateX(79px);
 }
 
-.on {
-    display: none;
-}
+/*.on {*/
+    /*display: none;*/
+/*}*/
 
-.on, .off {
-    color: white;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    font-size: 11px;
-    font-weight: 400;
-}
+/*.on, .off {*/
+    /*color: white;*/
+    /*position: absolute;*/
+    /*transform: translate(-50%, -50%);*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*font-size: 11px;*/
+    /*font-weight: 400;*/
+/*}*/
 
-.off {
-    color: #333;
-}
+/*.off {*/
+    /*color: #333;*/
+/*}*/
+
 
 input:checked + .slider .on {
     display: block;
@@ -191,7 +207,8 @@ input:checked + .slider .off {
 }
 
 thead {
-    background: #ecf0f5;
+    background: #168cda;
+    color: #ffffff;
 }
 
 /*.table-striped>tbody>tr:nth-of-type(odd) {*/
@@ -435,3 +452,124 @@ thead {
     margin-top: -2px;
     object-fit: cover !important;
 }
+
+.skin-black-light .main-header .navbar>.sidebar-toggle {
+    color: #333;
+    border-right: 1px solid #ffffff;
+}
+
+.skin-black-light .main-header .navbar .navbar-custom-menu .navbar-nav>li>a, .skin-black-light .main-header .navbar .navbar-right>li>a {
+    border-left: 1px solid #ffffff;
+    border-right-width: 0;
+}
+
+.skin-black-light .main-header>.logo {
+    background-color: #fff;
+    color: #fff;
+    /*border-bottom: 1px solid #d2d6de;*/
+    border-bottom: 1px solid transparent;
+    border-right: none;
+}
+
+.skin-black-light .main-header {
+    /*border-bottom: 1px solid #d2d6de; */
+    border-bottom: 1px solid transparent;
+}
+
+.skin-black-light .wrapper, .skin-black-light .main-sidebar, .skin-black-light .left-side {
+    background-color: #fff;
+}
+
+.skin-black-light .sidebar-menu>li.header {
+    color: #444444;
+    background: #d2d6de;
+}
+.skin-black-light .main-header li.user-header {
+    background-color: #efefef;
+}
+.skin-blue-light .main-header li.user-header {
+    background-color: #168cda;
+}
+
+.navbar-nav>.user-menu>.dropdown-menu>li.user-header>p {
+    z-index: 5;
+    color: #fff;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.navbar-custom-menu>.navbar-nav>li>.dropdown-menu {
+    position: absolute;
+    /*right: 5%;*/
+    left: auto;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    background-color: #168cda;
+    color: #fff;
+}
+
+
+.gutter-5  {
+    padding-right:5px;
+    padding-left:5px;
+}
+
+/*
+    navbar color
+ */
+.skin-blue-light .main-header .logo {
+    background-color: #168cda;
+    color: #fff;
+    border-bottom: 0 solid transparent;
+}
+
+.skin-blue-light .main-header .logo:hover{
+    background-color: #1673bf;
+}
+
+.skin-blue-light .main-header .navbar {
+    background-color: #168cda;
+}
+
+.skin-blue-light .sidebar-menu>li.header {
+    color: #000000;
+    border-top: 1px solid #d5d5d5;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.skin-blue-light .sidebar-menu>li>.treeview-menu {
+    background: #f9fafc;
+}
+
+.skin-blue-light .sidebar-menu>li:hover>a, .skin-blue-light .sidebar-menu>li.active>a {
+    color: #fff;
+    background: #168cda;
+}
+
+.skin-blue-light .sidebar-menu .treeview-menu>li.active>a, .skin-blue-light .sidebar-menu .treeview-menu>li>a:hover {
+    color: #168cda;
+}
+
+
+
+.list-group-item {
+    border: 1px solid #2f8cda;
+}
+
+.list-group-header{
+    background: #2f8cda;
+    color : white;
+}
+
+.adjust-sidebar-text{
+    width: 150px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.navbar-text {
+    color: white;
+}
+
